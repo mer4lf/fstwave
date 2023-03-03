@@ -1,0 +1,31 @@
+1) нет отличий
+2) function checkAge(a){
+        return age > 18 ? true: confirm('Родители разрешили?')
+    }
+
+    function checkAge(a){
+        return age > 18 || confirm('Родители разрешили?')
+    }
+3) function min(a, b){
+        return a < b ? a: b
+    }
+
+4) function pow(x, n) {
+     let result = x;
+     for (let i = 1; i < n; i++) {
+       result *= x;
+     }
+     return result;
+   }
+
+(стрелочные ф-ции)
+1) function ask(question, yes, no) {
+     if (confirm(question)) yes()
+     else no();
+   }
+
+   ask(
+     "Вы согласны?",
+     () => { alert("Вы согласились."); },
+     () => { alert("Вы отменили выполнение."); }
+   );

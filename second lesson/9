@@ -1,0 +1,8 @@
+1) 2
+2) 1 2
+3) null
+4) 1 undefined
+5) 3
+6) if (age >= 14 && age <= 90)
+7) if (!(age >= 14 && age <= 90))
+8) first, third true, false, true

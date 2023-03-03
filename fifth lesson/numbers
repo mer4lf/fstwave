@@ -1,0 +1,32 @@
+///1///
+a = +prompt('Введите первое число');
+b = +prompt('Введите второе число');
+alert(a+b);
+
+///2///
+так происходит из-за того, что все дробные числа являются бесконечными дробями в 64-битной записи
+
+правильнее сделать так alert( Math.round(6.35 * 10) / 10 );
+
+///3///
+function readNumber(){
+    do{
+      inp = prompt('Введите число', 0);
+      if(inp =='' || inp == null){ return null}
+    }while(!isFinite(inp))
+    return +inp;
+  }
+
+///4///
+цикл бесконечный тк при прибавлении дробного числа накапливается ошибка из-за
+особенностей хранения данных в 64-битной системе
+
+///5///
+function random(min, max) {
+    return min + Math.random() * (max - min);
+}
+
+///6///
+function randomInteger(min, max) {
+    return (min + Math.random() * (max - min)).toFixed(0);
+}
